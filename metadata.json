@@ -1,0 +1,6 @@
+{
+  "name": "Cafe Lake View Pushkar",
+  "description": "Rooftop sanctuary perched above the sacred ghats of Pushkar Lake, Rajasthan. Specialty single-origin coffee, wholesome food, and panoramic golden-hour sunsets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
