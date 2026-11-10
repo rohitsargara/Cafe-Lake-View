@@ -1,5 +1,7 @@
 import React from 'react';
 import { Coffee, Heart, Feather, ShieldCheck } from 'lucide-react';
+import interiorImage from '../assets/images/cafe_interior_terrace_1794303608987.jpg';
+import coffeePourImage from '../assets/images/specialty_coffee_pour_1794303610232.jpg';
 
 export const StoryExperience: React.FC = () => {
   return (
@@ -25,7 +27,7 @@ export const StoryExperience: React.FC = () => {
           <div className="lg:col-span-7 relative">
             <div className="relative rounded-lg overflow-hidden shadow-lg border border-[#e2d5c3]">
               <img
-                src="/src/assets/images/cafe_interior_terrace_1794303608987.jpg"
+                src={interiorImage}
                 alt="Minimalist sunlit cafe interior with handcrafted wood table, cappuccino, and carved jali window"
                 referrerPolicy="no-referrer"
                 className="w-full h-[460px] sm:h-[540px] object-cover"
@@ -107,7 +109,7 @@ export const StoryExperience: React.FC = () => {
           <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="relative rounded-lg overflow-hidden shadow-lg border border-[#e2d5c3]">
               <img
-                src="/src/assets/images/specialty_coffee_pour_1794303610232.jpg"
+                src={coffeePourImage}
                 alt="Barista pouring single-origin filter coffee with gooseneck kettle into ceramic mug"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] object-cover"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, Sun, Sparkles, MapPin, Compass } from 'lucide-react';
 import { CAFE_DETAILS } from '../data/cafeData';
+import heroImage from '../assets/images/hero_pushkar_lake_cafe_1794303607721.jpg';
 
 interface HeroSectionProps {
   onOpenReservation: () => void;
@@ -12,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReservation }) =
       {/* Background Hero Image with Measured Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_pushkar_lake_cafe_1794303607721.jpg"
+          src={heroImage}
           alt="Cafe Lake View rooftop terrace overlooking holy Pushkar Lake and ghats"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-[1.02] transition-transform duration-1000 ease-out"

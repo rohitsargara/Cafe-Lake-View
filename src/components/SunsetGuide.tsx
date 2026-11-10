@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sunset, Compass, Sparkles, Check, ArrowRight, Clock } from 'lucide-react';
 import { ROOFTOP_ZONES, RooftopZone } from '../data/cafeData';
+import sunsetImage from '../assets/images/sunset_lake_view_dusk_1794303612000.jpg';
 
 interface SunsetGuideProps {
   onSelectZoneForReservation: (zoneId: string) => void;
@@ -43,7 +44,7 @@ export const SunsetGuide: React.FC<SunsetGuideProps> = ({ onSelectZoneForReserva
         {/* Feature Image of Pushkar Sunset from the Rooftop */}
         <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#4a3a2e] mb-16">
           <img
-            src="/src/assets/images/sunset_lake_view_dusk_1794303612000.jpg"
+            src={sunsetImage}
             alt="Pushkar lake bathed in sunset blue hour with warm lanterns and temple reflection"
             referrerPolicy="no-referrer"
             className="w-full h-[400px] sm:h-[520px] object-cover"

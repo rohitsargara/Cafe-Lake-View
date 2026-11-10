@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Check, Info, Sparkles, Coffee, Utensils, Leaf, X } from 'lucide-react';
 import { MENU_ITEMS, MenuItem } from '../data/cafeData';
+import foodSpreadImage from '../assets/images/organic_food_spread_1794303613380.jpg';
 
 interface MenuSectionProps {
   onAddToCart: (item: MenuItem) => void;
@@ -105,7 +106,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onAddToCart, cartItemI
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
             <div className="lg:col-span-7 h-[260px] sm:h-[340px]">
               <img
-                src="/src/assets/images/organic_food_spread_1794303613380.jpg"
+                src={foodSpreadImage}
                 alt="Organic artisan sourdough tartines, falafel mezze and golden latte spread"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
